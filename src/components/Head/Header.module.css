@@ -1,4 +1,10 @@
 .HeaderJsx {
+    display: grid;
+
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    
+    grid-gap: 10px;
+    grid-template-areas: 'logo nav se ph';
     grid-area: hed;
     position: fixed;
     height: 120px;

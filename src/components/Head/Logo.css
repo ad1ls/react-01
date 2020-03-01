@@ -1,0 +1,7 @@
+.logoClass {
+    grid-area: logo;
+}
+.logoClass img {
+    width: 50px;
+    height: 60px;
+}
