@@ -1,0 +1,10 @@
+.HeaderJsx {
+    grid-area: hed;
+    position: fixed;
+    height: 120px;
+    width: 100%;
+    background-color: orange;
+    text-align: center;
+    justify-self: center;
+    justify-content: center;
+}

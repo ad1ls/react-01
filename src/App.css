@@ -1,7 +1,16 @@
 .Main {
+  box-sizing: border-box;
+  line-height: 1.6;
+
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: sans-serif;
   display: grid;
-  grid-template-columns: 5fr 5fr;
+  grid-template-columns: 2fr 8fr;
   grid-template-rows: 2fr 8fr;
-  grid-gap: 1fr;
-  grid-template-areas: 'hed hed' 'nav pro';
+  grid-gap: 1rem;
+  grid-template-areas:
+   'hed hed'
+   'nav pro';
 }

@@ -1,0 +1,11 @@
+.NavbarJsx {
+    background-color: aqua;
+    grid-area: nav;
+    border-radius: 2%;
+}
+.NavbarJsx ul {
+    list-style-type: none;
+}
+.NavbarJsx ul li {
+    color: #fff;
+}
