@@ -8,9 +8,9 @@ import Profile from './components/Profile';
 const App = () => {
   return (
     <div className='Main'>
-      <Header></Header>
-      <Navbar></Navbar>
-      <Profile></Profile>
+      <Header />
+      <Navbar />
+      <Profile />
     </div >
   );
 }
