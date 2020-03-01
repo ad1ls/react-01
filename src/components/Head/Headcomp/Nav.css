@@ -1,0 +1,28 @@
+.Navul {
+    list-style: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.Navul li {
+    margin: 0 1rem;
+      padding: 1rem;
+}
+.Navul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #fff;
+        transition: all .3s;
+}
+.Navul li a:hover {
+    color: aqua;
+}
+
+
+
+.navClass {
+    grid-area: nav;
+}

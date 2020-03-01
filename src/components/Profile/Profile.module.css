@@ -1,6 +1,9 @@
 .ProfileJsx {
-    background-color: purple;
+    background-color: blanchedalmond;
     border-radius: 1%;
     grid-area: pro;
-    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: black;
 }

@@ -5,10 +5,10 @@ const Nav = () => {
     return (
         <div className='navClass'>
             <ul className='Navul'>
-                <li>Community</li>
-                <li>Classfields</li>
-                <li>Config</li>
-                <li>Shop</li>
+                <li><a src='#'>Community</a></li>
+                <li><a src='#'>Classfields</a></li>
+                <li><a src='#'>Config</a></li>
+                <li><a src='#'>Shop</a></li>
             </ul>
         </div>
     )

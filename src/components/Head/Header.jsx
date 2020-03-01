@@ -1,9 +1,9 @@
 import React from 'react';
 import s from './Header.module.css';
-import Logo from './Logo';
-import Nav from './Nav';
-import Search from './Search';
-import Photo from './Photo';
+import Logo from './Headcomp/Logo';
+import Nav from './Headcomp/Nav';
+import Search from './Headcomp/Search';
+import Photo from './Headcomp/Photo';
 
 const Header = () => {
   return (
