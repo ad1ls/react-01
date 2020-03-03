@@ -8,4 +8,15 @@
 }
 .NavbarJsx ul li {
     color: black;
+    font-weight: bold;
+}
+.NavbarJsx ul li a {
+    text-decoration: none;
+}
+.NavbarJsx ul li a:hover {
+    font-style: italic;
+    color: brown;
+}
+.NavbarJsx ul li a:active {
+    color: aqua;
 }
