@@ -6,7 +6,7 @@ const Navbar = () => {
         <div className={s.NavbarJsx}>
             <ul>
                 <li>Profile</li>
-                <li>News</li>
+                <li>Messages</li>
                 <li>Photos</li>
                 <li>Music</li>
                 <li>Settings</li>

@@ -1,16 +1,19 @@
 .HeaderJsx {
     color: #fff;
+
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 3fr 2fr 1fr;
     grid-gap: 10px;
     grid-template-areas: 'logo nav se ph';
     grid-area: hed;
-    position: fixed;
-    height: 120px;
+  
+    height: 90%;
     width: 100%;
+    margin-top: 10px;
+
     background-color:#33393F;
     text-align: center;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
 }

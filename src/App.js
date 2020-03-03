@@ -1,16 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Header from './components/Head/Header';
 import Navbar from './components/Navbar/Navbar';
 import Profile from './components/Profile/Profile';
+import Com from './components/Com/Com';
+import Dialogs from './components/Dialogs/Dialogs';
 
 const App = () => {
   return (
     <div className='Main'>
       <Header />
       <Navbar />
-      <Profile />
+      <div className='changeProfile'>
+        <Profile />
+        </div>
+      <Com />
     </div >
   );
 }

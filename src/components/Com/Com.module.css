@@ -1,0 +1,12 @@
+.ComJsx {
+    grid-area: com;
+    justify-content: center;
+    align-items: center;
+    background-color: #bdc3c7;
+    border-radius: 1%;
+    color: black;
+}
+.ComJsx ul {
+    list-style: none;
+    font-weight: bold;
+}
