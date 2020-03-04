@@ -4,10 +4,6 @@
     grid-template-columns: 2fr 3fr;
     color: #fff;
 }
-
-.Dialogs .active {
-    color: red;
-}
 .DialogItem {
-    color: #fff;
+    color: white;
 }
