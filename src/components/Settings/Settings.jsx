@@ -3,7 +3,7 @@ import s from './Settings.module.css';
 
 const Settings = () => {
   return (
-    <div className={s.SettingsJsx}>
+    <div className={s.Settings}>
       <ul>
         <li>1</li>
         <li>P2hoto</li>

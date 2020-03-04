@@ -1,4 +1,4 @@
-.ComJsx {
+.Com {
     grid-area: com;
     justify-content: center;
     align-items: center;
@@ -6,7 +6,7 @@
     border-radius: 1%;
     color: black;
 }
-.ComJsx ul {
+.Com ul {
     list-style: none;
     font-weight: bold;
 }

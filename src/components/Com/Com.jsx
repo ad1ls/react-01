@@ -3,7 +3,7 @@ import s from './Com.module.css';
 
 const Com = () => {
   return (
-    <div className={s.ComJsx}>
+    <div className={s.Com}>
       <ul>
         <li>Hasg</li>
         <li>Photo</li>

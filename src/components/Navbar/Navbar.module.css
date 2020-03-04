@@ -1,22 +1,22 @@
-.NavbarJsx {
+.Navbar {
     background-color: #F2F2F2;
     grid-area: nav;
     border-radius: 2%;
 }
-.NavbarJsx ul {
+.Navbar ul {
     list-style-type: none;
 }
-.NavbarJsx ul li {
+.Navbar ul li {
     color: black;
     font-weight: bold;
 }
-.NavbarJsx ul li a {
+.Navbar ul li a {
     text-decoration: none;
 }
-.NavbarJsx ul li a:hover {
+.Navbar ul li a:hover {
     font-style: italic;
     color: brown;
 }
-.NavbarJsx ul li a:active {
+.Navbar ul li a:active {
     color: aqua;
 }

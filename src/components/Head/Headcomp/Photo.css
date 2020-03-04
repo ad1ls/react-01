@@ -1,7 +1,7 @@
-.photoClass {
+.Photo {
     grid-area: ph;
 }
-.photoClass img {
+.Photo img {
     width: 50px;
     height: 50px;
 }

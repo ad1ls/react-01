@@ -1,4 +1,8 @@
-.Navul {
+.Nav {
+    grid-area: nav;
+}
+
+.NavUl {
     list-style: none;
     font-size: 18px;
     display: flex;
@@ -6,23 +10,17 @@
     justify-content: center;
     text-align: center;
 }
-.Navul li {
+.NavUl li {
     margin: 0 1rem;
       padding: 1rem;
 }
-.Navul li a {
+.NavUl li a {
         text-decoration: none;
         text-transform: uppercase;
         font-weight: bold;
         color: #fff;
         transition: all .3s;
 }
-.Navul li a:hover {
+.NavUl li a:hover {
     color: aqua;
-}
-
-
-
-.navClass {
-    grid-area: nav;
 }

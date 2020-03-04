@@ -7,7 +7,7 @@ import Photo from './Headcomp/Photo';
 
 const Header = () => {
   return (
-    <div className={s.HeaderJsx}>
+    <div className={s.Header}>
       <Logo/> <Nav/> <Search/> <Photo/>
     </div>
   )

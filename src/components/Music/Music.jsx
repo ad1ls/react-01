@@ -3,7 +3,7 @@ import s from './Music.module.css';
 
 const Music = () => {
   return (
-    <div className={s.MusicJsx}>
+    <div className={s.Music}>
       <ul>
         <li>AAAA</li>
         <li>AAAAAAAAAAAAAAA</li>

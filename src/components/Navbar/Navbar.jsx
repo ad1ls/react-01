@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-        <div className={s.NavbarJsx}>
+        <div className={s.Navbar}>
             <ul>
                 <li><NavLink to='/profile'>Profile</NavLink></li>
                 <li><NavLink to='/dialogs'>Messages</NavLink></li>

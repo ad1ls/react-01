@@ -3,8 +3,8 @@ import './Nav.css';
 
 const Nav = () => {
     return (
-        <div className='navClass'>
-            <ul className='Navul'>
+        <div className='Nav'>
+            <ul className='NavUl'>
                 <li><a href='#'>Community</a></li>
                 <li><a href='#'>Classfields</a></li>
                 <li><a href='#'>Config</a></li>
