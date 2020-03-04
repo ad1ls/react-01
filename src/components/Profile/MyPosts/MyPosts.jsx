@@ -1,12 +1,12 @@
 import React from 'react';
-import './MyPosts.css';
+import s from './MyPosts.module.css';
 
 const MyPosts = () => {
     return (
-        <div>
-            <p>Post Post Post</p>
-            <textarea>Chiki</textarea>
-            <button>Click</button>
+        <div className={s.MyPosts}>
+            <div><p>Post Post Post</p></div>
+            <div><textarea>Chiki</textarea></div>
+            <div><button>Click</button></div>
         </div>
     )
 }

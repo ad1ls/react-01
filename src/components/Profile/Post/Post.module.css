@@ -1,4 +1,6 @@
-.postClass{}
+.postClass{
+    padding: 10px;
+}
 .postClass img {
     width: 50px;
     height: 50px;
