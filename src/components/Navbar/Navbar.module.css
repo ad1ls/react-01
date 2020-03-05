@@ -7,16 +7,16 @@
     list-style-type: none;
 }
 .Navbar ul li {
-    color: black;
     font-weight: bold;
 }
 .Navbar ul li a {
+    color:black;
     text-decoration: none;
 }
 .Navbar ul li a:hover {
     font-style: italic;
-    color: brown;
+    color: green;
 }
 .Navbar ul li a:active {
-    color: aqua;
+    color: purple;
 }
