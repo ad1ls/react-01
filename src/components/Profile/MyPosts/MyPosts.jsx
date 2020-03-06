@@ -10,6 +10,7 @@ const MyPosts = (props) => {
 
     let postElements = postData.map((p) => <Post message={p.message} id={p.id} />);
 
+
     return (
         <div>
             <div className={s.MyPosts}>
