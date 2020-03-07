@@ -2,20 +2,20 @@ import React from 'react';
 import s from './Profile.module.css';
 import MyPosts from './MyPosts/MyPosts';
 import ProfileInfo from './ProfileInfo/ProfileInfo';
-import Post from './Post/Post'
+import Post from './Post/Post';
 
 const Profile = (props) => {
-  let postData = [
-    { id: 1, message: 'Naruto' },
-    { id: 2, message: 'Sasuke' }
-  ];
 
-  let postElements = postData.map((p) => <Post message={p.message} id={p.id} />);
+  let postsData = [
+    { id: 1, post: 'Yo beach' },
+    { id: 2, post: 'Hey Imma Rich' }
+  ];
+  let postsElements = postsData.map((p) => <Post postex={p.post} id={p.id} />);
 
   return (
     <div className={s.ProfileJsx}>
       <ProfileInfo />
-      <MyPosts />
+      <MyPosts propspost={postsElements} />
     </div>
   )
 }
