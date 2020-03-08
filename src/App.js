@@ -11,15 +11,15 @@ import Settings from './components/Settings/Settings';
 import { Route, BrowserRouter } from 'react-router-dom';
 
 
-const App = () => {
+const App = (props) => {
   return (
     <BrowserRouter>
       <div className='Main'>
         <Header />
         <Navbar />
         <div className='changeProfile'>
-          <Route path='/profile' render={() => <Profile />} />
-          <Route path='/dialogs' render={() => <Dialogs />} />
+          <Route path='/profile' render={() => <Profile posts={props.state.profilePage.posts} />} />
+          <Route path='/dialogs' render={() => <Dialogs dialogs={props.state.dialogsPage.dialogs} messages={props.state.dialogsPage.messages} />} />
           <Route path='/news' render={() => <News />} />
           <Route path='/music' render={() => <Music />} />
           <Route path='/settings' render={() => <Settings />} />
