@@ -5,7 +5,6 @@ let state = {
             { id: 2, message: 'Sasuke' }
         ]
     },
-
     dialogsPage: {
         dialogs: [
             { id: 1, name: 'Adil' },
@@ -19,7 +18,8 @@ let state = {
             { id: 2, message: 'Ypo' },
             { id: 3, message: 'EWewewewe' }
         ]
-    }
+    },
+    sidebar: {}
 };
 
 export default state;
