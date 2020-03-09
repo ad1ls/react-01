@@ -5,10 +5,12 @@ import FriendsPhoto from './FriendsPhoto/FriendsPhoto';
 const Friends = () => {
   return (
     <div className={s.Friends}>
-      <div><h3>Friends</h3></div>
-      <FriendsPhoto /> 
-      <FriendsPhoto /> 
-      <FriendsPhoto /> 
+      <div className={s.tittle}><h3>Friends</h3></div>
+      <div className={s.FriendsPhoto}>
+        <div className={s.photo1}><FriendsPhoto /></div>
+        <div className={s.photo2}><FriendsPhoto /></div>
+        <div className={s.photo3}><FriendsPhoto /></div>
+      </div>
     </div>
   )
 }

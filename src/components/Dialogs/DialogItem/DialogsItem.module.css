@@ -1,0 +1,10 @@
+.dialog {
+    color: #fff;
+
+}
+.dialog:hover {
+    color: aqua;
+}
+.dialog:active {
+    color: blueviolet;
+}

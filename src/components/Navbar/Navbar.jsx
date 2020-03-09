@@ -12,8 +12,8 @@ const Navbar = () => {
                 <li><NavLink to='/news'>News</NavLink></li>
                 <li><NavLink to='/music'>Music</NavLink></li>
                 <li><NavLink to='/settings'>Settings</NavLink></li>
-                <Friends />
             </ul>
+            <Friends><NavLink to='/friends'>Friends</NavLink></Friends>
         </div>
     )
 }

@@ -4,9 +4,6 @@
     grid-template-columns: 2fr 3fr;
     color: #fff;
 }
-.DialogItem {
-    color: yellow;
-}
-.dialog {
-    color:white;
+.DialogsItem {
+    margin: 15px;
 }
