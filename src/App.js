@@ -8,11 +8,10 @@ import Dialogs from './components/Dialogs/Dialogs';
 import News from './components/News/News';
 import Music from './components/Music/Music';
 import Settings from './components/Settings/Settings';
-import { Route, BrowserRouter } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 const App = (props) => {
   return (
-    <BrowserRouter>
       <div className='Main'>
         <Header />
         <Navbar />
@@ -25,7 +24,6 @@ const App = (props) => {
         </div>
         <Com />
       </div >
-    </BrowserRouter>
   );
 }
 

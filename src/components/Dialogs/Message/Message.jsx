@@ -1,5 +1,6 @@
 import React from 'react';
-import s from './../Dialogs.module.css';
+import s from './Message.modul.css';
+import { NavLink } from 'react-router-dom';
 
 const Message = (props) => {
     return (

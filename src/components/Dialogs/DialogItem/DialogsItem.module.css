@@ -1,6 +1,7 @@
 .dialog {
     color: #fff;
-
+    font-size: 20px;
+    border: 1.5px solid green;
 }
 .dialog:hover {
     color: aqua;
