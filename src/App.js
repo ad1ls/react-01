@@ -12,18 +12,18 @@ import { Route } from 'react-router-dom';
 
 const App = (props) => {
   return (
-      <div className='Main'>
-        <Header />
-        <Navbar />
-        <div className='changeProfile'>
-          <Route path='/profile' render={() => <Profile state={props.state.profilePage} />} />
-          <Route path='/dialogs' render={() => <Dialogs state={props.state.dialogsPage} />} />
-          <Route path='/news' render={() => <News />} />
-          <Route path='/music' render={() => <Music />} />
-          <Route path='/settings' render={() => <Settings />} />
-        </div>
-        <Com />
-      </div >
+    <div className='Main'>
+      <Header />
+      <Navbar />
+      <div className='changeProfile'>
+        <Route path='/profile' render={() => <Profile state={props.state.profilePage} addPost={props.addPost} />} />
+        <Route path='/dialogs' render={() => <Dialogs state={props.state.dialogsPage} />} />
+        <Route path='/news' render={() => <News />} />
+        <Route path='/music' render={() => <Music />} />
+        <Route path='/settings' render={() => <Settings />} />
+      </div>
+      <Com />
+    </div >
   );
 }
 
