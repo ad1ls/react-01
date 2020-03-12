@@ -6,7 +6,7 @@ let state = {
             { id: 1, message: 'Naruto best', likesCount: 2 },
             { id: 2, message: 'Sasuke best ttt', likesCount: 1 }
         ],
-        newPostText : 'KAVO'
+        newPostText: 'KAVO'
     },
     dialogsPage: {
         dialogs: [
@@ -20,7 +20,8 @@ let state = {
             { id: 1, message: 'Hi' },
             { id: 2, message: 'Ypo' },
             { id: 3, message: 'EWewewewe' }
-        ]
+        ],
+        newMessageText: 'Smth'
     },
     sidebar: {}
 };
@@ -38,6 +39,22 @@ export let addPost = () => {
 
 export let updateNewPostText = (newText) => {
     state.profilePage.newPostText = newText;
+    rerenderEntireTree(state)
+}
+
+export let addMessage = () => {
+    let newMessage = {
+        id: 4,
+        message: state.dialogsPage.newMessageText,
+
+    };
+    state.dialogsPage.messages.push(newMessage);
+    state.dialogsPage.newMessageText = '';
+    rerenderEntireTree(state)
+};
+
+export let addNewMessage = (newMessage) => {
+    state.dialogsPage.newMessageText = newMessage;
     rerenderEntireTree(state)
 }
 
