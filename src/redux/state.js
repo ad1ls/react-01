@@ -1,10 +1,5 @@
 const store = {
-
-    let rerenderEntireTree = () => {
-
-    },
-
-    let state = {
+    _state: {
         profilePage: {
             posts: [
                 { id: 1, message: 'Naruto best', likesCount: 2 },
@@ -29,41 +24,43 @@ const store = {
         },
         sidebar: {}
     },
+    getState() {
+        return this._state;
+    },
+    rerenderEntireTree() {
 
-    export const addPost = () => {
+    },
+    addPost() {
         let newPost = {
             id: 5,
-            message: state.profilePage.newPostText,
+            message: this._state.profilePage.newPostText,
             likesCount: 0
         };
-        state.profilePage.posts.push(newPost);
-        state.profilePage.newPostText = '';
-        rerenderEntireTree(state)
+        this._state.profilePage.posts.push(newPost);
+        this._state.profilePage.newPostText = '';
+        this._rerenderEntireTree(this._state)
     },
-
-    export const updateNewPostText = (newText) => {
-        state.profilePage.newPostText = newText;
-        rerenderEntireTree(state)
+    updateNewPostText(newText) {
+        this._state.profilePage.newPostText = newText;
+        this._rerenderEntireTree(this._state)
     },
-
-    export const subscribe = (observer) => {
+    subscribe(observer) {
         rerenderEntireTree = observer;
     },
-
-    export const addMessage = () => {
+    addMessage() {
         let newMessage = {
             id: 4,
-            message: state.dialogsPage.newMessageText,
+            message: this._state.dialogsPage.newMessageText,
 
         };
-        state.dialogsPage.messages.push(newMessage);
-        state.dialogsPage.newMessageText = '';
-        rerenderEntireTree(state)
+        this._state.dialogsPage.messages.push(newMessage);
+        this._state.dialogsPage.newMessageText = '';
+        this._rerenderEntireTree(this._state)
     },
-
-    export const addNewMessage = (newMessage) => {
-        state.dialogsPage.newMessageText = newMessage;
-        rerenderEntireTree(state)
+    addNewMessage(newMessage) {
+        this._state.dialogsPage.newMessageText = newMessage;
+        this._rerenderEntireTree(this._state)
     }
 }
-export default state;
+export default store;
+window.store = store;
