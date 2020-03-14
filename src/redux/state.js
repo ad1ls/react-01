@@ -25,6 +25,7 @@ const store = {
         sidebar: {}
     },
     getState() {
+        debugger;
         return this._state;
     },
     rerenderEntireTree() {
@@ -45,7 +46,7 @@ const store = {
         this._rerenderEntireTree(this._state)
     },
     subscribe(observer) {
-        rerenderEntireTree = observer;
+        this._rerenderEntireTree = observer;
     },
     addMessage() {
         let newMessage = {
