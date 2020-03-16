@@ -1,3 +1,8 @@
+const ADD_POST = 'ADD-POST';
+const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
+const ADD_MESSAGE = 'ADD-MESSAGE';
+const ADD_NEW_MESSAGE = 'ADD-NEW-MESSAGE';
+
 let store = {
     _state: {
         profilePage: {
@@ -5,7 +10,7 @@ let store = {
                 { id: 1, message: 'Naruto best', likesCount: 2 },
                 { id: 2, message: 'Sasuke best ttt', likesCount: 1 }
             ],
-            newPostText: 'KAVO'
+            newPostText: 'Smth'
         },
         dialogsPage: {
             dialogs: [
@@ -25,14 +30,13 @@ let store = {
         sidebar: {}
     },
     getState() {
-        debugger;
         return this._state;
     },
     _rerenderEntireTree() {
 
     },
     dispatch(action) {
-        if (action.type === 'ADD-POST') {
+        if (action.type === ADD_POST) {
             let newPost = {
                 id: 5,
                 message: this._state.profilePage.newPostText,
@@ -41,10 +45,12 @@ let store = {
             this._state.profilePage.posts.push(newPost);
             this._state.profilePage.newPostText = '';
             this._rerenderEntireTree(this._state)
-        } else if (action.type === 'UPDATE-NEW-POST-TEXT') {
+
+        } else if (action.type === UPDATE_NEW_POST_TEXT) {
             this._state.profilePage.newPostText = action.newText;
             this._rerenderEntireTree(this._state)
-        } else if (action.type === 'ADD-MESSAGE') {
+
+        } else if (action.type === ADD_MESSAGE) {
             let newMessage = {
                 id: 4,
                 message: this._state.dialogsPage.newMessageText,
@@ -52,7 +58,8 @@ let store = {
             this._state.dialogsPage.messages.push(newMessage);
             this._state.dialogsPage.newMessageText = '';
             this._rerenderEntireTree(this._state)
-        } else if (action.type === 'ADD-NEW-MESSAGE') {
+
+        } else if (action.type === ADD_NEW_MESSAGE) {
             this._state.dialogsPage.newMessageText = action.newMessage;
             this._rerenderEntireTree(this._state)
         }
@@ -63,17 +70,10 @@ let store = {
     },
 }
 
-export const addPostActionCreator = () => {
-    return {
-        type: 'ADD-POST'
-    }
-}
-export const onPostChangeActionCreator = (text) => {
-    return {
-        type: 'UPDATE-NEW-POST-TEXT',
-        newText: text
-    }
-}
+export const addPostActionCreator = () => ({ type: 'ADD-POST' })
+export const onPostChangeActionCreator = (text) => ({ type: 'UPDATE-NEW-POST-TEXT', newText: text })
+export const addMessageActionCreator = () => ({ type: 'ADD-MESSAGE' })
+export const onMessageChangeActionCreator = (text) => ({ type: 'ADD-NEW-MESSAGE', newMessage: text })
 
 export default store;
 window.store = store;
