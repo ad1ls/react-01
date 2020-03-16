@@ -10,7 +10,7 @@ let store = {
                 { id: 1, message: 'Naruto best', likesCount: 2 },
                 { id: 2, message: 'Sasuke best ttt', likesCount: 1 }
             ],
-            newPostText: 'Smth'
+            newPostText: ''
         },
         dialogsPage: {
             dialogs: [
@@ -25,7 +25,7 @@ let store = {
                 { id: 2, message: 'Ypo' },
                 { id: 3, message: 'EWewewewe' }
             ],
-            newMessageText: 'Smth'
+            newMessageBody: ''
         },
         sidebar: {}
     },
@@ -44,24 +44,24 @@ let store = {
             };
             this._state.profilePage.posts.push(newPost);
             this._state.profilePage.newPostText = '';
-            this._rerenderEntireTree(this._state)
+            this._rerenderEntireTree(this._state);
 
         } else if (action.type === UPDATE_NEW_POST_TEXT) {
             this._state.profilePage.newPostText = action.newText;
-            this._rerenderEntireTree(this._state)
+            this._rerenderEntireTree(this._state);
 
         } else if (action.type === ADD_MESSAGE) {
             let newMessage = {
                 id: 4,
-                message: this._state.dialogsPage.newMessageText,
+                message: this._state.dialogsPage.newMessageBody,
             };
             this._state.dialogsPage.messages.push(newMessage);
-            this._state.dialogsPage.newMessageText = '';
-            this._rerenderEntireTree(this._state)
+            this._state.dialogsPage.newMessageBody = '';
+            this._rerenderEntireTree(this._state);
 
         } else if (action.type === ADD_NEW_MESSAGE) {
-            this._state.dialogsPage.newMessageText = action.newMessage;
-            this._rerenderEntireTree(this._state)
+            this._state.dialogsPage.newMessageBody = action.body;
+            this._rerenderEntireTree(this._state);
         }
 
     },
@@ -73,7 +73,7 @@ let store = {
 export const addPostActionCreator = () => ({ type: 'ADD-POST' })
 export const onPostChangeActionCreator = (text) => ({ type: 'UPDATE-NEW-POST-TEXT', newText: text })
 export const addMessageActionCreator = () => ({ type: 'ADD-MESSAGE' })
-export const onMessageChangeActionCreator = (text) => ({ type: 'ADD-NEW-MESSAGE', newMessage: text })
+export const onMessageChangeActionCreator = (text) => ({ type: 'ADD-NEW-MESSAGE', body: text })
 
 export default store;
 window.store = store;
