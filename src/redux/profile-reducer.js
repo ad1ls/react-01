@@ -19,4 +19,8 @@ const profileReducer = (state, action) => {
             return state;
     }
 }
+
+export const addPostActionCreator = () => ({ type: 'ADD-POST' })
+export const onPostChangeActionCreator = (text) => ({ type: 'UPDATE-NEW-POST-TEXT', newText: text })
+
 export default profileReducer;

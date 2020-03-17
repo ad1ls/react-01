@@ -36,7 +36,7 @@ let store = {
     dispatch(action) {
         this._state.profilePage = profileReducer(this._state.profilePage, action)
         this._state.dialogsPage = dialogsReducer(this._state.dialogsPage, action)
-        //this._state.sidebar = sidebarReducer(this._state.sidebar, action)
+        this._state.sidebar = sidebarReducer(this._state.sidebar, action)
 
         this._rerenderEntireTree(this._state);
 
@@ -45,11 +45,6 @@ let store = {
         this._rerenderEntireTree = observer;
     },
 }
-
-export const addPostActionCreator = () => ({ type: 'ADD-POST' })
-export const onPostChangeActionCreator = (text) => ({ type: 'UPDATE-NEW-POST-TEXT', newText: text })
-export const addMessageActionCreator = () => ({ type: 'ADD-MESSAGE' })
-export const onMessageChangeActionCreator = (text) => ({ type: 'ADD-NEW-MESSAGE', body: text })
 
 export default store;
 window.store = store;
